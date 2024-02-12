@@ -1,0 +1,24 @@
+.icon-hover:hover {
+    border-color: #3b71ca !important;
+    background-color: white !important;
+    color: #3b71ca !important;
+  }
+  
+  .icon-hover:hover i {
+    color: #3b71ca !important;
+  }
+
+  .carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #000; /* Change this to the desired color for the button icons */
+}
+
+
+/* Add your custom CSS */
+
+
+.nav-pills .nav-link.active {
+  background-color: #eef6b9; /* Change this to the desired background color for active state */
+  color: #010101; /* Change this to the desired text color for active state */
+ 
+}

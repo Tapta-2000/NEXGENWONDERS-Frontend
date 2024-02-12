@@ -1,0 +1,339 @@
+
+
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <h3 class="text-center">ADD Mobiles</h3>
+  
+        <form [formGroup]="mobform" (ngSubmit)="onsubmit()"  >    
+          <div class="form-group mb-md-2 mb-sm-1">
+            
+            <input type="text" class="form-control" id="inputText"  placeholder="Title" formControlName="title" >
+          </div>
+          <div class="form-group mb-md-2 mb-sm-1">
+            
+            <input type="text" class="form-control" id="inputText" placeholder="Image Link1" formControlName="image" >
+          </div>
+  
+          <div class="form-group mb-md-2 mb-sm-1">
+            
+            <input type="text" class="form-control" id="inputText" placeholder="Image Link2" formControlName="image1" >
+          </div>
+          <div class="form-group mb-md-2 mb-sm-1">
+            
+            <input type="text" class="form-control" id="inputText" placeholder="Image Link3" formControlName="image2" >
+          </div>
+          <div class="form-group mb-md-2 mb-sm-1">
+            
+            <input type="text" class="form-control" id="inputText" placeholder="Image Link4" formControlName="image3" >
+          </div>
+        
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+          <div class="row mb-md-2 mb-sm-1">
+            <div class="col-sm-6">
+              <div class="form-group">
+                
+                <input type="text" class="form-control" id="inputText" placeholder="Rating" formControlName="rating" >
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-group">
+            
+                <input type="text" class="form-control" id="inputText" placeholder="MRP" formControlName="mrp" >
+              </div>
+            </div>
+          </div>
+  
+  
+          
+  
+  
+         
+          <div class="row mb-md-2 mb-sm-1">
+            <div class="col-sm-6">
+              <div class="form-group">
+                
+                <input type="text" class="form-control" id="inputText" placeholder="Discount" formControlName="discount" >
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-group">
+            
+                <input type="text" class="form-control" id="inputText" placeholder="Final Price" formControlName="finalprice" >
+              </div>
+            </div>
+          </div>
+         
+  
+          <div class="row mb-md-2 mb-sm-1">
+            <div class="col-sm-6">
+              <div class="form-group">
+                
+                <input type="text" class="form-control" id="inputText" placeholder="Available" formControlName="available" >
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-group">
+            
+                <input type="text" class="form-control" id="inputText" placeholder="Howmany people Rated" formControlName="peoplerated">
+              </div>
+            </div>
+          </div>
+  
+          <h5>Specification</h5>
+          <div class="form-group mb-md-2 mb-sm-1">
+            
+            <input type="text" class="form-control" id="inputText" placeholder="Sales Package" formControlName="package">
+          </div>
+          
+          <div class="row mb-md-2 mb-sm-1">
+            <div class="col-sm-6">
+              <div class="form-group">
+                
+                <input type="text" class="form-control" id="inputText" placeholder="Model Number" formControlName="modelnum">
+              </div>
+            </div>
+    
+            <div class="col-sm-6">
+              <div class="form-group">
+            
+                <input type="text" class="form-control" id="inputText" placeholder="Model Name" formControlName="modelname">
+              </div>
+            </div>
+          </div>
+          
+          <!-- <div class="row mb-md-2 mb-sm-1">
+            <div class="col-sm-6">
+              <div class="form-group">
+                
+                <input type="text" class="form-control" id="inputText" placeholder="Model Name" formControlName="modelname">
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-group">
+            
+                <input type="text" class="form-control" id="inputText" placeholder="Series" formControlName="series">
+              </div>
+            </div>
+          </div> -->
+          
+          <div class="row mb-md-2 mb-sm-1">
+            <div class="col-sm-6">
+              <div class="form-group">
+               
+                <select class="form-control" id="exampleFormControlSelect" placeholder="Select Color" formControlName="color">
+                  <option value="select">Select Color</option>
+                  <option value="silver">Silver</option>
+                  <option value="black">Black</option>
+                  <option value="white">White</option>
+                  <option value="gold">Gold</option>
+                  <option value="rose gold">Rose Gold</option>
+                  <option value="space gray">Space Gray</option>
+                  <option value="blue">Blue</option>
+                  <option value="red">Red</option>
+                  <option value="pink" >Pink</option>
+                  <option value="green">Green</option>
+                  <option value="purple">Purple</option>
+                  <option value="orange">Orange</option>
+                  <option value="yellow">Yellow</option>
+                  <option value="bronze">Bronze</option>
+                  <option value="copper">Copper</option>
+                  <option value="charcoal">Charcoal</option>
+                  <option value="midnight blue" >Midnight Blue</option>
+                  <option value="aqua">Aqua</option>
+                  <option value="indigo">Indigo</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-group">
+            
+                <input type="text" class="form-control" id="inputText" placeholder="Sim Type" formControlName="type">
+              </div>
+            </div>
+          </div>
+  
+          <h5>Processor And Memory Features</h5>
+  
+         
+  
+          <div class="row mb-md-2 mb-sm-1">
+            <div class="col-sm-6">
+              <div class="form-group">
+                
+                <input type="text" class="form-control" id="inputText" placeholder="Operating System" formControlName="os">
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-group">
+            
+                <input type="text" class="form-control" id="inputText" placeholder="Processor Name" formControlName="pname">
+              </div>
+            </div>
+          </div>
+  
+          <div class="row mb-md-2 mb-sm-1">
+            <div class="col-sm-6">
+              <div class="form-group">
+                
+                <input type="text" class="form-control" id="inputText" placeholder="Processor Core" formControlName="Pcore">
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-group">
+            
+                <input type="text" class="form-control" id="inputText" placeholder="Primary Clock Speed" formControlName="Pclock">
+              </div>
+            </div>
+          </div>
+  
+          <div class="row mb-md-2 mb-sm-1">
+            <div class="col-sm-6">
+              <div class="form-group">
+                
+                <input type="text" class="form-control" id="inputText" placeholder="Secondary Clock Speed" formControlName="Sclock">
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-group">
+            
+                <input type="text" class="form-control" id="inputText" placeholder="Memory Card Slot Type" formControlName="memoryslot">
+              </div>
+            </div>
+          </div>
+  
+          <div class="row mb-md-2 mb-sm-1">
+            <div class="col-sm-6">
+              <div class="form-group">
+                
+                <input type="text" class="form-control" id="inputText" placeholder="Internal Storage"formControlName="rom">
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-group">
+            
+                <input type="text" class="form-control" id="inputText" placeholder="RAM"formControlName="ram">
+              </div>
+            </div>
+          </div>
+
+          <h5>Camera Features and Others</h5>
+  
+          <div class="row mb-md-2 mb-sm-1">
+            <div class="col-sm-6">
+              <div class="form-group">
+                
+                <input type="text" class="form-control" id="inputText" placeholder="Primary Camera" formControlName="Pcamera">
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-group">
+            
+                <input type="text" class="form-control" id="inputText" placeholder="Secondary Camera"formControlName="Scamera">
+              </div>
+            </div>
+          </div>
+  
+   
+  
+  
+          
+  
+          
+  <div class="row mb-md-2 mb-sm-1">
+    <div class="col-sm-6">
+      <div class="form-group">
+        
+        <input type="text" class="form-control" id="inputText" placeholder="Network Type" formControlName="nt">
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="form-group">
+    
+        <input type="text" class="form-control" id="inputText" placeholder="Bluetooth Version" formControlName="bv">
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  <div class="row mb-md-2 mb-sm-1">
+    <div class="col-sm-6">
+      <div class="form-group">
+        
+        <input type="text" class="form-control" id="inputText" placeholder="WIFI Version" formControlName="wv">
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="form-group">
+    
+        <input type="text" class="form-control" id="inputText" placeholder="Battery Capacity" formControlName="bc">
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  <div class="row mb-md-2 mb-sm-1">
+    <div class="col-sm-6">
+      <div class="form-group">
+        
+        <input type="text" class="form-control" id="inputText" placeholder="Bluetooth" formControlName="bluetooth" >
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="form-group">
+    
+        <input type="text" class="form-control" id="inputText" placeholder="Dimesion" formControlName="dimension">
+      </div>
+    </div>
+  </div>
+  
+  <div class="row mb-md-2 mb-sm-1">
+    <div class="col-sm-6">
+      <div class="form-group">
+        
+        <input type="text" class="form-control" id="inputText" placeholder="Weight" formControlName="weight">
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="form-group">
+        <input type="text" class="form-control" id="inputText" placeholder="Warranty Year" formControlName="waranty">
+    
+        
+      </div>
+    </div>
+  </div> 
+        
+      
+        
+          <div class="form-group">
+       
+            <textarea class="form-control" id="exampleFormControlTextarea" rows="3" placeholder="Description" formControlName="text"></textarea>
+          </div>
+          <div class="row mb-md-2 mb-sm-1">
+         <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+          <div class="row mb-md-2 mb-sm-1">
+          <p *ngIf="valid" style="color:red">Some field are not correctly Filled.</p>
+             </div>
+          
+        </form>
+      </div>
+    </div>
+  </div>
+  

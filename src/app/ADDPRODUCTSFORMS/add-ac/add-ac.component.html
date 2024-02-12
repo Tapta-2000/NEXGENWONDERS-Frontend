@@ -1,0 +1,310 @@
+
+
+
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <h3 class="text-center">ADD AC</h3>
+
+      <form [formGroup]="acform" (ngSubmit)="onsubmit()"  >    
+        <div class="form-group mb-md-2 mb-sm-1">
+          
+          <input type="text" class="form-control" id="inputText"  placeholder="Title" formControlName="title" >
+        </div>
+        <div class="form-group mb-md-2 mb-sm-1">
+          
+          <input type="text" class="form-control" id="inputText" placeholder="Image Link1" formControlName="image" >
+        </div>
+
+        <div class="form-group mb-md-2 mb-sm-1">
+          
+          <input type="text" class="form-control" id="inputText" placeholder="Image Link2" formControlName="image1" >
+        </div>
+        <div class="form-group mb-md-2 mb-sm-1">
+          
+          <input type="text" class="form-control" id="inputText" placeholder="Image Link3" formControlName="image2" >
+        </div>
+        <div class="form-group mb-md-2 mb-sm-1">
+          
+          <input type="text" class="form-control" id="inputText" placeholder="Image Link4" formControlName="image3" >
+        </div>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="row mb-md-2 mb-sm-1">
+          <div class="col-sm-6">
+            <div class="form-group">
+              
+              <input type="text" class="form-control" id="inputText" placeholder="Rating" formControlName="rating" >
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="form-group">
+          
+              <input type="text" class="form-control" id="inputText" placeholder="MRP" formControlName="mrp" >
+            </div>
+          </div>
+        </div>
+
+
+        
+
+
+       
+        <div class="row mb-md-2 mb-sm-1">
+          <div class="col-sm-6">
+            <div class="form-group">
+              
+              <input type="text" class="form-control" id="inputText" placeholder="Discount" formControlName="discount" >
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="form-group">
+          
+              <input type="text" class="form-control" id="inputText" placeholder="Final Price" formControlName="finalprice" >
+            </div>
+          </div>
+        </div>
+       
+
+        <div class="row mb-md-2 mb-sm-1">
+          <div class="col-sm-6">
+            <div class="form-group">
+              
+              <input type="text" class="form-control" id="inputText" placeholder="Available" formControlName="available" >
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="form-group">
+          
+              <input type="text" class="form-control" id="inputText" placeholder="Howmany people Rated" formControlName="peoplerated">
+            </div>
+          </div>
+        </div>
+
+        <h5>Specification</h5>
+        <div class="form-group mb-md-2 mb-sm-1">
+          
+          <input type="text" class="form-control" id="inputText" placeholder="Sales Package" formControlName="package">
+        </div>
+        
+        <div class="row mb-md-2 mb-sm-1">
+          <div class="col-sm-6">
+            <div class="form-group">
+              
+              <input type="text" class="form-control" id="inputText" placeholder="Brand Name" formControlName="brand">
+            </div>
+          </div>
+  
+          <div class="col-sm-6">
+            <div class="form-group">
+          
+              <input type="text" class="form-control" id="inputText" placeholder="Model Name" formControlName="modelname">
+            </div>
+          </div>
+        </div>
+
+
+        <div class="row mb-md-2 mb-sm-1">
+          <div class="col-sm-6">
+            <div class="form-group">
+              
+              <input type="text" class="form-control" id="inputText" placeholder="Capacity" formControlName="capacity">
+            </div>
+          </div>
+  
+          <div class="col-sm-6">
+            <div class="form-group">
+          
+              <input type="text" class="form-control" id="inputText" placeholder="Star" formControlName="star">
+            </div>
+          </div>
+        </div>
+        
+       
+        
+        <div class="row mb-md-2 mb-sm-1">
+          <div class="col-sm-6">
+            <div class="form-group">
+             
+              <select class="form-control" id="exampleFormControlSelect" placeholder="Select Color" formControlName="color">
+                <option value="select">Select Color</option>
+                <option value="silver">Silver</option>
+                <option value="black">Black</option>
+                <option value="white">White</option>
+                <option value="gold">Gold</option>
+                <option value="rose gold">Rose Gold</option>
+                <option value="space gray">Space Gray</option>
+                <option value="blue">Blue</option>
+                <option value="red">Red</option>
+                <option value="pink" >Pink</option>
+                <option value="green">Green</option>
+                <option value="purple">Purple</option>
+                <option value="orange">Orange</option>
+                <option value="yellow">Yellow</option>
+                <option value="bronze">Bronze</option>
+                <option value="copper">Copper</option>
+                <option value="charcoal">Charcoal</option>
+                <option value="midnight blue" >Midnight Blue</option>
+                <option value="aqua">Aqua</option>
+                <option value="indigo">Indigo</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="form-group">
+          
+              <input type="text" class="form-control" id="inputText" placeholder="Cooling Capacity" formControlName="cc">
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group mb-md-2 mb-sm-1">
+          
+          <input type="text" class="form-control" id="inputText" placeholder="Operating Modes" formControlName="om">
+        </div>
+
+       
+
+       
+
+        <div class="row mb-md-2 mb-sm-1">
+          <div class="col-sm-6">
+            <div class="form-group">
+              
+              <input type="text" class="form-control" id="inputText" placeholder="Indoor Dimensions(W*H*D)" formControlName="idimension">
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="form-group">
+          
+              <input type="text" class="form-control" id="inputText" placeholder="Indoor Weight" formControlName="iweight">
+            </div>
+          </div>
+        </div>
+
+        <div class="row mb-md-2 mb-sm-1">
+          <div class="col-sm-6">
+            <div class="form-group">
+              
+              <input type="text" class="form-control" id="inputText" placeholder="Outdoor Dimension(W*H*D)" formControlName="od">
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="form-group">
+          
+              <input type="text" class="form-control" id="inputText" placeholder="Outdoor Weight" formControlName="oweight">
+            </div>
+          </div>
+        </div>
+
+        <div class="row mb-md-2 mb-sm-1">
+          <div class="col-sm-6">
+            <div class="form-group">
+              
+              <input type="text" class="form-control" id="inputText" placeholder="Power Requirement" formControlName="pr">
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="form-group">
+          
+              <input type="text" class="form-control" id="inputText" placeholder="Annual Electricity Consumption" formControlName="aec">
+            </div>
+          </div>
+        </div>
+
+        <div class="row mb-md-2 mb-sm-1">
+          <div class="col-sm-6">
+            <div class="form-group">
+              
+              <input type="text" class="form-control" id="inputText" placeholder="Air Circulation"formControlName="ac">
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="form-group">
+          
+              <input type="text" class="form-control" id="inputText" placeholder="Auto Restart"formControlName="AR">
+            </div>
+          </div>
+        </div>
+
+     
+
+        <div class="row mb-md-2 mb-sm-1">
+          <div class="col-sm-6">
+            <div class="form-group">
+              
+              <input type="text" class="form-control" id="inputText" placeholder="Timer" formControlName="timer">
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="form-group">
+          
+              <input type="text" class="form-control" id="inputText" placeholder="Child Lock"formControlName="cl">
+            </div>
+          </div>
+        </div>
+
+ 
+
+
+        
+
+        
+<div class="row mb-md-2 mb-sm-1">
+  <div class="col-sm-6">
+    <div class="form-group">
+      
+      <input type="text" class="form-control" id="inputText" placeholder="Sleep Mode" formControlName="slm">
+    </div>
+  </div>
+
+  <div class="col-sm-6">
+    <div class="form-group">
+      
+      <input type="text" class="form-control" id="inputText" placeholder="Warranty" formControlName="warranty">
+    </div>
+  </div>
+ 
+</div>
+
+
+
+
+
+
+
+
+
+
+      
+    
+      
+        <div class="form-group">
+     
+          <textarea class="form-control" id="exampleFormControlTextarea" rows="3" placeholder="Description" formControlName="text"></textarea>
+        </div>
+        <div class="row mb-md-2 mb-sm-1">
+       <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+        <div class="row mb-md-2 mb-sm-1">
+        <p *ngIf="valid" style="color:red">Some field are not correctly Filled.</p>
+           </div>
+        
+      </form>
+    </div>
+  </div>
+</div>
+

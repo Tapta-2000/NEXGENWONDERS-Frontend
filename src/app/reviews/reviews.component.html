@@ -1,0 +1,51 @@
+<section style="color: #000; background-color: #f3f2f2;">
+    <div class="container py-5">
+      <div class="row d-flex justify-content-center">
+        <div class="col-md-10 col-xl-8 text-center">
+            <form [formGroup]="lapreview" (ngSubmit)="reviewlap()">
+                <!-- Name input -->
+                <div class="row">
+                    <div class="col-md-7">
+                        <div class="form-outline mb-2">
+                            <input type="text" id="form4Example1" class="form-control" placeholder="Name" formControlName="name" />
+                          
+                          </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="form-outline mb-2">
+                            <input type="text" id="form4Example1" class="form-control" placeholder="Rating" formControlName="rating"/>
+                          
+                          </div>
+                    </div>
+                </div>
+                <div class="form-outline mb-2">
+                  <input type="text" id="form4Example2" class="form-control" placeholder="Image" formControlName="image" />
+                
+                </div>
+              
+              
+                <!-- Email input -->
+                <div class="form-outline mb-2">
+                  <input type="text" id="form4Example2" class="form-control" placeholder="Review" formControlName="review" />
+                
+                </div>
+               
+              
+                <!-- Message input -->
+                <div class="form-outline mb-2">
+                  <textarea class="form-control" id="form4Example3" rows="3" placeholder="Brief Explanation" formControlName="explain"></textarea>
+                 
+                </div>
+              
+                <!-- Checkbox -->
+               
+              
+                <!-- Submit button -->
+                <button type="submit" class="btn w-100  btn-block mb-3 " style="background-color:#000;color:white">Insert a Review</button>
+              </form>
+        </div>
+      </div>
+  
+  
+    </div>
+  </section>

@@ -1,0 +1,73 @@
+
+<div class="container-fluid">
+    <div class="row">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="background-image: linear-gradient(to right,rgb(78, 78, 234),rgb(89, 201, 232));">
+            <a class="navbar-brand" href="#"><span style="font-size:30px">NEXGENWONDER</span></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="d-flex justify-content-between collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" routerLink="/home"><span style="font-weight:bold; color:white">Home</span> <span class="sr-only">(current)</span></a>
+                </li>
+              
+                <li class="nav-item ">
+                
+                  <div class="form-group ">
+                    
+                    <select class="form-control" id="exampleFormControlSelect"  [(ngModel)]="form" (change)="selectform()"> 
+                      <option value="select">Select Form</option>
+                      <option value="/addfridge">Fridge</option>
+                      <option value="/addac">AC</option>
+                      <option value="/addheadphone">Headphone</option>
+                      <option value="/addmob">Mobile</option>
+                      <option value="/addlap">LapTop</option>
+                      <option value="/addtv">TV</option>
+                    </select>
+                   
+                  </div>
+                </li>
+               
+              </ul>
+
+           
+
+              <ul class="navbar-nav me-md-4 me -sm-2">
+                <li class="nav-item active">
+                  <a class="nav-link" routerLink="/signin"><span style="font-weight:bold ;color:white">Sign In</span></a>
+        
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" routerLink="/Cart"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" class="bi bi-cart-check-fill" viewBox="0 0 16 16">
+                    <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm-1.646-7.646-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L8 8.293l2.646-2.647a.5.5 0 0 1 .708.708z"/>
+                  </svg></a>
+              
+            
+                </li>
+
+              </ul>
+              <!-- <div class="d-flex me-md-2">
+                <a  class="me-1 border rounded py-1 px-3 nav-link d-flex align-items-center" target="_blank"> <i class="fas fa-user-alt m-1 me-md-2"></i><p class="d-none d-md-block mb-0" routerLink="/signin">Sign in</p> </a>
+      
+             
+
+              </div> -->
+            
+            </div>
+          </nav>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
